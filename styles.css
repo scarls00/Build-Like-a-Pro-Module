@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cause:wght@100..900&display=swap');
 
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Playwrite NZ Basic', 'cursive', sans-serif;
+  font-family: 'Cause', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
@@ -17,13 +17,25 @@ li {
 nav {
   display: flex;
   justify-content: space-between;
-}
-
-#personal-logo {
-  width: 50px;
-  height: 50px;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100px;
 }
 
 .nav__link--list {
   display: flex;
+}
+
+.nav__link {
+  margin: 0 12px;
+}
+
+.nav__link--anchor {
+  text-decoration: none;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 700;
+  transition: color 0.3s ease;
 }
