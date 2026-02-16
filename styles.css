@@ -5,7 +5,6 @@
   font-family: 'Cause', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 } 
 
 li {
@@ -74,10 +73,14 @@ section {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translat3e(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+}
+
+.header__content h1 {
+  font-size: 120px;
 }
 
 .header__para {
@@ -172,6 +175,7 @@ nav {
 #personal-logo {
   width: 250px;
   height: 80px;
+  border-radius: 50%;
 }
 
 .nav__link--list {
