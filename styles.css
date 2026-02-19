@@ -38,6 +38,15 @@ input, textarea {
   border-left: none;
   border-right: none;
   height: 40px;
+  transition: all 300ms ease;
+}
+
+input:hover, textarea:hover {
+  border-color: #dcdfe6;
+}
+
+input:focus, textarea:focus {
+  border-color: #f5df4d;
 }
 
 label {
@@ -64,6 +73,7 @@ textarea {
 }
 
 .click {
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
@@ -278,6 +288,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .modal__about {
@@ -351,7 +362,69 @@ nav {
   font-weight: 700;
   width: 100%;
   max-width: 240px;
+  padding: 12px 24px;
+  font-size: 20px;
 }
+
+.form__submit:hover {
+  border-color: #fff;
+  background-color: transparent;
+}
+
+.form__submit:active {
+  border-color: f5df4d;
+  color: f5df4d;
+}
+
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+.fa-spinner {
+  animation: spinner 750ms infinite linear;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.modal__overlay--loading {
+  background-color: #55a5c5;
+  font-size: 80px;
+  z-index: -1;
+}
+
+.modal__overlay--success {
+   background-color: #9fc44e;
+   font-size: 40px;
+   font-weight: 700;
+   text-align: center;
+   padding: 28px;
+}
+
+.modal__exit {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  color: #fff;
+  font-size: 36px;
+  z-index: 100;
+}
+
 
 
 
