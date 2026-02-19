@@ -28,6 +28,29 @@ section {
   background-color: rgb(244, 244, 244);
 }
 
+input, textarea {
+  width: 100%;
+  background-color: #242424;;
+  color: white;
+  outline: none;
+  border: 3px solid #c0c4cc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-top: 8px;
+}
+
 .container {
   padding: 50px 0;
   width: 100%;
@@ -252,13 +275,29 @@ nav {
 
 .modal__half {
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .modal__about {
   background-color: rgb(244, 244, 244);
   padding: 40px 72px;
-  display: flex;
-  flex-direction: column;
+}
+
+.modal__title {
+  font-size: 26px;
+}
+
+.modal__sub-title {
+  margin: 12px 0 24px 0;
+  font-size: 14px;
+}
+
+.modal__para {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  line-height: 1.75;
 }
 
 .modal__languages {
@@ -268,6 +307,28 @@ nav {
 
 .modal__language {
   width: 25%;
+  padding: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300ms ease;
+}
+
+.modal__language:hover .language__name {
+  transform: scale(1);
+}
+
+.modal__language:hover {
+  filter: brightness(80%);
+  transform: scale(0.9);
+}
+
+.language__name {
+  position: absolute;
+  bottom: -10px;
+  transform: scale(0);
+  transition: all 300ms ease;
 }
 
 .modal__language--img {
@@ -279,7 +340,18 @@ nav {
   color: white;
 }
 
+.form__item {
+  margin-bottom: 20px;
+}
 
+.form__submit {
+  background-color: #f5df4d;
+  border: 2px solid #f5df4d;
+  color: black;
+  font-weight: 700;
+  width: 100%;
+  max-width: 240px;
+}
 
 
 

@@ -71,40 +71,66 @@
         <div class="modal">
             <div class="modal__half modal__about">
                 <h3 class="modal__title modal__title--about">A bit about me</h3>
-                <h4 class="modal__sub-title modal__sub-title--about"></h4>
+                <h4 class="modal__sub-title modal__sub-title--about"><b class="blue">Frontend Software Engineer</b></h4>
                 <p class="modal__para">
-                    In my former life as a social worker and educator with management experience, I bring many skills to the table beyond the technical requirements. 
+                    In my former life as a social worker and educator with <b class="blue"> management experience</b>, I bring many skills to the table beyond the technical requirements. 
                     <br>
                     Let's have a video chat to determine how I can be the most useful in your company's structure.
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="HTML5 Logo">
+                        <span class="language__name">HTML</span>
                     </figure>
-                    <figur class="modal__language">
+                    <figure class="modal__language">
                         <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS3 Logo">
+                        <span class="language__name">CSS</span>
                     </figure>                    
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo">
+                        <span class="language__name">JavaScript</span>
                     </figure>                    
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/React_Logo_SVG.svg/330px-React_Logo_SVG.svg.png" alt="React Logo">
+                        <span class="language__name">React</span>
                     </figure>
                     <figure class="modal__language">
-                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/250px-Typescript.svg.png alt=" alt="TypeScript Logo">
+                        <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Typescript.svg/250px-Typescript.svg.png" alt="TypeScript Logo">
+                        <span class="language__name">TypeScript</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Redux_Logo.png/500px-Redux_Logo.png" alt="Redux Logo">
+                        <span class="language__name">Redux</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Next.js_wordmark.svg/500px-Next.js_wordmark.svg.png" alt="Next.js Logo">
+                        <span class="language__name">Next.JS</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src=" https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/New_Firebase_logo.svg/500px-New_Firebase_logo.svg.png" alt="Firebase Logo">
+                        <span class="language__name">Firebase</span>
                     </figure>
                 </div>
             </div>
-            <div class="modal__half modal__contact">Let's Connect!</div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's Connect!</h3>
+                <h4 class="modal__sub-title modal__sub-title--contact"><b class="blue">Currently Open To New Opportunities.</b></h4>
+                <form id="contact__form" action="">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input: name=user_name" type="text" id="name" name="name" required></input>
+                    </div>
+                     <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input: name=user_email" type="email" id="name" name="name" required></input>
+                    </div>
+                     <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <input class="input: name=message" type="text" id="name" name="name" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit click" type="submit">Send it my way!</button>
+                </form>
+            </div>
         </div>
     </section>
     <section class="projects">
