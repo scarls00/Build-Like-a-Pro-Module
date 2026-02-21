@@ -349,6 +349,7 @@ nav {
 .modal__contact {
   background-color: black;
   color: white;
+  padding: 40px 72px;
 }
 
 .form__item {
@@ -368,7 +369,6 @@ nav {
 
 .form__submit:hover {
   border-color: #fff;
-  background-color: transparent;
 }
 
 .form__submit:active {

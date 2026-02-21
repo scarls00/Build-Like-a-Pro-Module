@@ -1,5 +1,5 @@
 function contact(event) {
-    event.preventDefault
+    event.preventDefault()
     emailjs
         .sendForm(
             'service_5mjnnki',
