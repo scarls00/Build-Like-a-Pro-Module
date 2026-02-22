@@ -26,6 +26,7 @@ button {
 
 section {
   background-color: rgb(244, 244, 244);
+  transition: all 300ms ease;
 }
 
 input, textarea {
@@ -123,6 +124,49 @@ textarea {
 .blue {
   color: #55a5c5 !important;
 }
+
+nav,
+.scroll,
+.header {
+  opacity:1;
+  visibility: visible;
+  transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+  opacity:0;
+  visibility: hidden;
+  transition: all 400ms;
+}
+
+.dark-theme .title,
+.dark-them .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .fa-adjust,
+.dark-theme .header__para {
+  color: white;
+}
+.dark-theme section {
+  background-color: #242424;
+}
+.dark-theme #personal-logo {
+  filter: none;
+}
+.dark-theme .scroll__icon {
+  border-color: white;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after {
+  background-color: white;
+}
+.dark-theme .mail__btn {
+  background-color: white;
+  color: #242424;
+}
+
+
 
 
 
@@ -277,10 +321,19 @@ nav {
   width: 90%;
   max-width: 1100px;
   height: 700px;
-  box-shadow: 0 20px 80px 0 black;
   border-radius: 2-px;
   overflow: hidden;
   display: flex;
+  visibility: hidden;
+  z-index: -1;
+  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+}
+
+.modal--open .modal__about,
+.modal--open .modal__contact  {
+  z-index: 60;
+  box-shadow: 0 20px 80px 0 black; 
+  visibility: visible;
 }
 
 .modal__half {
@@ -289,11 +342,17 @@ nav {
   flex-direction: column;
   justify-content: center;
   position: relative;
+  transition: all 300 ms ease-in;
+}
+
+.modal--open .modal__about {
+  transform: translateX(0%);
 }
 
 .modal__about {
   background-color: rgb(244, 244, 244);
   padding: 40px 72px;
+  transform: translateX(-110%);
 }
 
 .modal__title {
@@ -350,6 +409,7 @@ nav {
   background-color: black;
   color: white;
   padding: 40px 72px;
+  transform: translateX(110%);
 }
 
 .form__item {
@@ -414,6 +474,11 @@ nav {
    font-weight: 700;
    text-align: center;
    padding: 28px;
+}
+
+.modal__overlay--visible {
+  z-index: 1;
+  display: flex;
 }
 
 .modal__exit {
