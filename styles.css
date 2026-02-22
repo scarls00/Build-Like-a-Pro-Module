@@ -468,7 +468,6 @@ nav {
 .modal__overlay--loading {
   background-color: #55a5c5;
   font-size: 80px;
-  z-index: -1;
 }
 
 .modal__overlay--success {
@@ -607,4 +606,19 @@ footer {
   color: #f5df4d;
   font-size: 26px;
   font-weight: 700;
+}
+
+
+
+
+/* SHAPES */
+
+.shape {
+  height: 30px;
+  width: 30px;
+}
+
+.shape-0 {
+  height: 35vh;
+  width: 35vh;
 }
