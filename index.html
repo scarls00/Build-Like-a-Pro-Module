@@ -56,9 +56,9 @@
         </nav>
         <header class="header">
             <div class="header__content">
-                <h1 class="blue">Hey,</h1>
+                <h1>Hey,</h1>
                 <h1 class="blue">I'm Rey</h1>
-                <p class="header__para">I'm a <b class="blue">Frontend Software Engineer </b>from artsy Portland, Oregon, USA! I'm a school-teacher turned passionate site designer. Here's a little more <b class="blue">about me</b>!</p>
+                <p class="header__para">I'm a <b class="blue">Frontend Software Engineer </b>from artsy Portland, Oregon, USA! Once school-teacher, now passionate site designer! Here's a little more <b class="blue click" onclick="toggleModal()">about me</b>!</p>
             </div>
             <div class="social__list">
                 <a href="https://www.linkedin.com/in/missscarlett" target="_blank" class="social__link click">
@@ -85,7 +85,7 @@
                 <p class="modal__para">
                     In my former life as a social worker and educator with <b class="blue"> management experience</b>, I bring many skills to the table beyond the technical requirements. 
                     <br>
-                    Let's have a <b class="blue click" onclick="toggleModal">video chat</b> to determine how I can be the most useful in your company's structure.
+                    Let's have a <b class="blue">video chat</b> to determine how I can be the most useful in your company's structure.
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
@@ -141,16 +141,16 @@
                     </div>
                     <button id="contact__submit" class="form__submit click" type="submit">Send it my way!</button>
                 </form>
-                <div class="modal__overlay modal__overlay--loading">
+                <div class="modal__overlay">
                     <i class="fas fa-spinner"></i>
                 </div>
-                <div class="modal__overlay modal__overlay--success">
+                <div class="modal__overlay">
                     Thanks for the message! Looking forward to speaking to you soon!
                 </div>
             </div>
         </div>
     </section>
-    <section class="projects">
+    <section id="projects">
         <div class="container">
             <div class="row">
                 <h1 class="section__title">

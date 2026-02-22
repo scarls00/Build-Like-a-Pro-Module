@@ -141,8 +141,10 @@ nav,
   transition: all 400ms;
 }
 
+.dark-theme .nav__link--anchor,
+.dark-theme .nav__link--list,
 .dark-theme .title,
-.dark-them .section__title,
+.dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .fa-adjust,
 .dark-theme .header__para {
@@ -158,8 +160,9 @@ nav,
   border-color: white;
 }
 .dark-theme .scroll__icon:after,
-.dark-theme .link__hover-effect--black:after {
-  background-color: white;
+.dark-theme .link__hover-effect--black:after,
+.dark-theme .footer__social--link:after {
+  background-color: #f5df4d;
 }
 .dark-theme .mail__btn {
   background-color: white;
@@ -325,7 +328,7 @@ nav {
   overflow: hidden;
   display: flex;
   visibility: hidden;
-  z-index: -1;
+  z-index: 1;
   transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 
@@ -409,7 +412,7 @@ nav {
   background-color: black;
   color: white;
   padding: 40px 72px;
-  transform: translateX(110%);
+  transform: translateX(0%);
 }
 
 .form__item {
