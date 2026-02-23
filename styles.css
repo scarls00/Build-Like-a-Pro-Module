@@ -101,11 +101,11 @@ textarea {
 }
 
 .link__hover-effect--white:after {
-  background-color: white;
+  background-color: #ebcd0c;
 }
 
 .link__hover-effect--black:after {
-  background-color: #f5df4d;
+  background-color: #ebcd0c;
 }
 
 .link__hover-effect:hover:after {
@@ -182,11 +182,11 @@ nav,
 
 .header {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 60%;
+  left: 60%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
   padding: 0 30px;
 }
 
@@ -606,7 +606,7 @@ footer {
 
 .footer__social--link,
 .footer__copyright {
-  color: #f5df4d;
+  color: #ebcd0c;
   font-size: 26px;
   font-weight: 700;
 }
@@ -624,43 +624,43 @@ footer {
 
 .shape-0 {
   top: 15vh;
-  left: 5vh;
+  left: 5vw;
 }
 .shape-1 {
   top: 15vh;
-  left: 50vh;
+  left: 50vw;
 }
 .shape-2 {
   top: 15vh;
-  left: 80vh;
+  left: 80vw;
 }
 .shape-3 {
-  top: 70vh;
-  left: 5vh;
+  top: 90vh;
+  left: 15vw;
 }
 .shape-4 {
   top: 50vh;
-  left: 50vh;
+  left: 50vw;
 }
 .shape-5 {
   top: 50vh;
-  left: 80vh;
+  left: 80vw;
 }
 .shape-6 {
   top: 50vh;
-  left: 5vh;
+  left: 5vw;
 }
 .shape-7 {
   top: 80vh;
-  left: 50vh;
+  left: 50vw;
 }
 .shape-8 {
   top: 80vh;
-  left: 80vh;
+  left: 80vw;
 }
 .shape-9 {
   top: 80vh;
-  left: 5vh;
+  left: 5vw;
 }
 
 
@@ -687,6 +687,34 @@ footer {
     border-radius: 0;
   }
   .modal__half {
+    width: 100%;
+  }
+}
+
+/* SMALL PHONES */
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .header__para {
+    font-size: 18px;
+  }
+  .nav__link:first-child {
+    display: none;
+  }
+  .project__description--para {
+    display: none;
+    padding: 0;
+    width: 100%;
+  }
+  .project__description {
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    left: 5px;
+    padding: 0;
     width: 100%;
   }
 }
