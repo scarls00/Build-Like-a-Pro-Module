@@ -206,7 +206,7 @@ nav,
 }
 
 .social__link {
-  background-color: #b9d505;
+  background-color: #8dd739;
   color: white;
   font-size: 14px;
   padding: 6px;
@@ -579,6 +579,7 @@ nav {
 /* FOOTER */
 
 footer {
+  position: relative;
   background-color: #55a5c5;
   display: flex;
   padding: 3% 0;
@@ -617,27 +618,23 @@ footer {
 
 .shape {
   position: fixed;
-  height: 30px;
-  width: 30px;
+  height: 20px;
+  width: 20px;
 }
 
 .shape-0 {
-  color: teal;
   top: 15vh;
   left: 5vh;
 }
 .shape-1 {
-  color: greenyellow;
   top: 15vh;
   left: 50vh;
 }
 .shape-2 {
-  color:aqua;
   top: 15vh;
   left: 80vh;
 }
 .shape-3 {
-  color: purple;
   top: 70vh;
   left: 5vh;
 }
@@ -665,3 +662,11 @@ footer {
   top: 80vh;
   left: 5vh;
 }
+
+
+
+
+/* MEDIA QUERIES */
+
+/* SMALL PHONES, LARGE PHONES, TABLETS */
+
