@@ -405,6 +405,7 @@ nav {
 
 .modal__language--img {
   width: 100%;
+  max-height: 69.5px;
 }
 
 .modal__contact {
